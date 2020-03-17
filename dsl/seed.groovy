@@ -1,3 +1,7 @@
-job(jobName) {
-    description("A simple Freestyle Job created from seed.groovy")
+buildMonitorView('project-A') {
+    description('All jobs for project A')
+    jobs {
+        name('release-projectA')
+        regex(/project-A-.+/)
+    }
 }
